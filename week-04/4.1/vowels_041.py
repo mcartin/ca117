@@ -11,7 +11,6 @@ for c in sys.stdin.read().lower().rstrip():
 def tagger(item):
     return item[1]
 
-
 padding = len(str(max(vowels.values())))
 
 for k, v in sorted(vowels.items(), key=tagger, reverse=True):
