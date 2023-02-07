@@ -4,8 +4,6 @@ import sys
 
 vowels = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}
 
-
-
 for c in sys.stdin.read().lower().rstrip():
     if c in vowels:
         vowels[c] += 1
