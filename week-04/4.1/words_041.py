@@ -2,6 +2,7 @@
 
 import sys
 import string
+
 counter = {}
 # banned = '!"#$%&()*+, -./:;<=>?@[\]^_`{|}~'
 banned = string.punctuation
