@@ -3,10 +3,11 @@
 import sys
 textfile = sys.argv[1]
 
-text = [word.strip() for word in sys.stdin]
 
 with open(textfile) as f:
     censor = [line.strip() for line in f.readlines()]
+
+text = [word.strip() for word in sys.stdin]
 
 for words in text:
     for censored in censor:
