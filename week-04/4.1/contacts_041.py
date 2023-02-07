@@ -7,7 +7,7 @@ filename = sys.argv[1]
 
 with open(filename) as f:
     for line in f:
-        [name, num] = line.split()
+        name, num = line.split()
         contacts[name] = num
 
 for name in sys.stdin:

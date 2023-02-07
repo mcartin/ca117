@@ -6,7 +6,7 @@ contacts = {}
 
 with open(sys.argv[1]) as f:
     for line in f:
-        [name, num, email] = line.split()
+        name, num, email = line.split()
         contacts[name] = (num, email)
 
 for name in sys.stdin:
