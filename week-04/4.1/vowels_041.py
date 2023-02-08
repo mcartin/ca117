@@ -14,4 +14,4 @@ def tagger(item):
 padding = len(str(max(vowels.values())))
 
 for k, v in sorted(vowels.items(), key=tagger, reverse=True):
-    print(f"{k} : {v:{padding}}")
+    print(f"{k} : {v:>{padding}}")
