@@ -16,10 +16,13 @@ numbers = {
     10: "ten"
 }
 
-lines = [line.split() for line in sys.stdin]
+# lines = [line.split() for line in sys.stdin] if using this use for line in lines and get rid of line 24
 
-for line in lines:
+
+for line in sys.stdin:
     nums = []
-    for word in line:
-            nums.append(numbers[int(word)])
+    tokens = line.strip().split()
+    for num in tokens:
+        num = int(num)
+        nums.append(numbers[int(num)])
     print(" ".join(nums))

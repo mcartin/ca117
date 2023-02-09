@@ -15,7 +15,6 @@ numbers = {
     9: "nine",
     10: "ten"
 }
-# lines = [line.split() for line in sys.stdin]
 
 for line in sys.stdin:
     nums = []

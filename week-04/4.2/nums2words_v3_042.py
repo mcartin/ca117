@@ -9,11 +9,13 @@ with open(sys.argv[1]) as f:
     for i, l in enumerate(lines):
         mapping[i] = l.split()[1]
 
-lines = [line.split() for line in sys.stdin]
+# lines = [line.split() for line in sys.stdin] if using this use for line in lines and get rid of line 24
 
 
-for line in lines:
+for line in sys.stdin:
     nums = []
-    for word in line:
-            nums.append(mapping[int(word)])
+    tokens = line.strip().split()
+    for num in tokens:
+        num = int(num)
+        nums.append(mapping[int(num)])
     print(" ".join(nums))
