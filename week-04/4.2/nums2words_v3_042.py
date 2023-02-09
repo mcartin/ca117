@@ -6,8 +6,8 @@ mapping = {}
 
 with open(sys.argv[1]) as f:
     lines = f.readlines()
-    for i, l in enumerate(lines):
-        mapping[i] = l.split()[1]
+    for index, translated in enumerate(lines):
+        mapping[index] = translated.split()[1]
 
 # lines = [line.split() for line in sys.stdin] if using this use for line in lines and get rid of line 24
 
