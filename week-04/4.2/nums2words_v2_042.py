@@ -24,7 +24,6 @@ for line in sys.stdin:
         if num in numbers:
             nums.append(numbers[num])
         else:
-
             nums.append("unknown")
 
     print(" ".join(nums))
