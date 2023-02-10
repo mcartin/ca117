@@ -4,15 +4,15 @@ import sys
 
 tokens = sys.stdin.readline().split()
 numbers = [int(t) for t in tokens]
-sorted = sorted(numbers)
+sort = sorted(numbers)
 
-letter = 'ABCDEF'
+order = sys.stdin.readline().strip()
+order = [t for t in order]
+letter = sorted(order)
 
-z = zip(letter, sorted)
+z = zip(letter, sort)
 
 d = {k : v for k, v in z}
 
-order = sys.stdin.readline().strip()
-
-output = [str(d[letter]) for letter in order]
+output = [str(d[let]) for let in order]
 print(" ".join(output))

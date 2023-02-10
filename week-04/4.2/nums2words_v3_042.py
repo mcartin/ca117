@@ -2,12 +2,13 @@
 
 import sys
 
-mapping = {}
+translation = {}
+file = sys.argv[1]
 
-with open(sys.argv[1]) as f:
+with open(file) as f:
     lines = f.readlines()
     for index, translated in enumerate(lines):
-        mapping[index] = translated.split()[1]
+        translation[index] = translated.split()[1]
 
 # lines = [line.split() for line in sys.stdin] if using this use for line in lines and get rid of line 24
 
@@ -17,5 +18,5 @@ for line in sys.stdin:
     tokens = line.strip().split()
     for num in tokens:
         num = int(num)
-        nums.append(mapping[int(num)])
+        nums.append(translation[int(num)])
     print(" ".join(nums))
