@@ -3,7 +3,7 @@
 import sys
 
 list = sys.stdin.readlines()
-list[0] = list[0].strip("\n")
+list[0] = list[0].strip()
 water = int(list[0])
 buckets = 0
 list = list[1].split()
