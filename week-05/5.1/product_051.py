@@ -4,7 +4,7 @@ import sys
 
 n = sys.stdin.readline().strip()
 
-while 9 < int(n):
+while int(n) > 9:
     n = str(n)
     nums = [int(i) for i in n]
     product = 1
