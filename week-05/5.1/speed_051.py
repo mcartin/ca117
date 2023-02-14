@@ -12,6 +12,3 @@ for lines in sys.stdin:
     prevTime, prevDistance = curTime, curDistance
 
 print(int(max(speeds)))
- 
-    
-
