@@ -3,6 +3,7 @@
 import sys
 
 n = sys.stdin.readline().strip()
+
 while 9 < int(n):
     n = str(n)
     nums = [int(i) for i in n]
@@ -11,5 +12,4 @@ while 9 < int(n):
         if i != 0:
             product *= i
     n = product
-
 print(n)
