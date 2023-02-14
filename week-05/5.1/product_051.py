@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from sys import stdin
+import sys
 
-n = stdin.readline().strip()
+n = sys.stdin.readline().strip()
 while 9 < int(n):
     n = str(n)
     nums = [int(i) for i in n]
