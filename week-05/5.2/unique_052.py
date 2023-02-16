@@ -2,11 +2,7 @@
 
 import sys
 
-
-
-numbers = [t for t in sys.stdin.readlines()]
-for n in numbers:
-    num = n.split()
-    uniques = [n.strip() for n in num if num.count(n) == 1]
-
+for line in sys.stdin:
+    numbers = [int(t) for t in line.strip().split()]
+    uniques = [n for n in numbers if numbers.count(n) == 1]
     print(max(uniques, default='none'))

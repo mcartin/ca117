@@ -18,7 +18,7 @@ for line in sys.stdin:
     try:
         dict[name] = strike(tokens[-3:])
     except ValueError:
-        	disqualified.append(name)
+        disqualified.append(name)
 for k, v in sorted(dict.items(), key=sorter):
     print(f'{k:s}: {v:d}')
 if disqualified:
