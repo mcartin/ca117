@@ -8,7 +8,7 @@ for line in sys.stdin:
     for char in line.lower():
         if char in alphabet:
             alphabet = alphabet.replace(char, "")
-    if alphabet == "":
+    if alphabet == "":     # or len(alphabet) == 0:
         print("pangram")
     else:
         print(f"missing {alphabet}")
