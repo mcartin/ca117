@@ -4,7 +4,7 @@ import sys
 
 location = sys.stdin.readline().strip()
 
-order_to_go = sys.stdin.read().strip()
+order_to_go = sys.stdin.readline().strip()
 
 
 def A(list):
