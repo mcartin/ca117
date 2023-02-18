@@ -18,5 +18,5 @@ for line in sys.stdin:
     tokens = line.strip().split()
     for num in tokens:
         num = int(num)
-        nums.append(translation[int(num)])
+        nums.append(translation[num])
     print(" ".join(nums))

@@ -24,5 +24,5 @@ for line in sys.stdin:
     tokens = line.strip().split()
     for num in tokens:
         num = int(num)
-        nums.append(numbers[int(num)])
+        nums.append(numbers[num])
     print(" ".join(nums))
