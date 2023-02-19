@@ -4,5 +4,11 @@ import sys
 
 for line in sys.stdin:
     calories = int(line)
-    calories = calories + 300
-    print(calories // 400)
+    chocolate = 400
+    if calories % chocolate == 0:
+        print(calories // chocolate)
+    
+    elif calories > 0:
+        print(calories // chocolate + 1)
+    else:
+        print("0")
