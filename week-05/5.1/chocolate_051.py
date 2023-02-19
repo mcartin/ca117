@@ -7,7 +7,6 @@ for line in sys.stdin:
     chocolate = 400
     if calories % chocolate == 0:
         print(calories // chocolate)
-    
     elif calories > 0:
         print(calories // chocolate + 1)
     else:
