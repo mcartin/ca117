@@ -10,7 +10,7 @@ for token in tokens:
     for char in token:
         if char in string.punctuation:
          token = token.replace(char, "")
-    if token.isalnum() and token not in unique:
-    # if token not in unique and len(token) > 0:
+    if len(token) > 0 and token not in unique:
+    # if token not in unique and token.isalnum():
       unique.append(token)
 print(len(unique))
