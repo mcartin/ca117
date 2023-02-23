@@ -7,8 +7,9 @@ def get_divisors(num):
     return divisors
 
 def get_proper_divisors(num):
-    divisors = get_divisors(num)
-    divisors.remove(num)
+    # divisors = get_divisors(num)
+    # divisors.remove(num)
+    divisors = [n for n in range(1, num) if num % n == 0]
     return divisors
 
 def is_perfect(num):
