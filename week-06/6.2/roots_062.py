@@ -11,15 +11,11 @@ def roots(a, b, c):
     else:
         root1 = (-b + (D ** 0.5)) / (2 * a)
         root2 = (-b - (D ** 0.5)) / (2 * a)
-        root1 = round(root1, 1)
-        root2 = round(root2, 1)
+        big_root =  min(root1, root2)
+        small_root =  max(root1, root2)
 
-        return (f'{min(root1, root2)}, {max(root1, root2)}')
-        # if root1 > root2:
-        #     return (f'{root2}, {root1}')
-        # else:
-        #     return (f'{root1}, {root2}')
-        
+        return (f'{big_root:.1f}, {small_root:.1f}')
+
 
 for line in sys.stdin:
     a, b, c = line.split()
