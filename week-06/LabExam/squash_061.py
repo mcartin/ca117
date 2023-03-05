@@ -7,14 +7,14 @@ for line in lines:
     count = 0 
     toprint = ''
     line = line.strip()
-    c = line[0]
+    current_char = line[0]
     for char in line:
-        if char == c:
+        if char == current_char:
             count += 1
-            c = char
+            current_char = char
         else:
-            toprint += (str(count) + c)
-            c = char
+            toprint += (str(count) + current_char)
+            current_char = char
             count = 1
-    toprint = toprint + (str(count) + c)
+    toprint = toprint + (str(count) + current_char)
 print(toprint)
