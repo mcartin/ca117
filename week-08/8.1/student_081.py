@@ -11,7 +11,9 @@ class Student():
         print(f'Modules: {", ".join(self.modlist)}')
 
     def add_module(self, new_module):
-        self.modlist.append(new_module)
+        if new_module not in self.modlist:
+            self.modlist.append(new_module)
 
     def del_module(self, module):
-        self.modlist.remove(module)
+        if module in self.modlist:
+            self.modlist.remove(module)
