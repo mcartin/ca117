@@ -22,5 +22,5 @@ class Circle:
     def __str__(self):
         output = []
         output.append(f"Centre: ({self.centre.x:.1f}, {self.centre.y:.1f})")
-        output.append(f"Radius: {self.radius:}")
+        output.append(f"Radius: {self.radius}")
         return "\n".join(output)
