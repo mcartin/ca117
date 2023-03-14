@@ -19,9 +19,9 @@ class Circle(object):
         self.centre = Point(0,0) if centre is None else centre
         self.radius = radius
 
-    def __add__(c1, c2):
-        centre = c1.centre.midpoint(c2.centre)
-        radius = c1.radius + c2.radius
+    def __add__(self, other):
+        centre = self.centre.midpoint(other.centre)
+        radius = self.radius + other.radius
         return Circle(centre, radius)
 
     def __str__(self):
