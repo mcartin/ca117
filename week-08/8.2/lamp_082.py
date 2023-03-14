@@ -1,4 +1,4 @@
-class Lamp:
+class Lamp(object):
 
     def __init__(self, on=False):
         self.on = on

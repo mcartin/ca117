@@ -1,4 +1,4 @@
-class BankAccount():
+class BankAccount(object):
 
     def set_attributes(self, name, number, balance):
         self.name = name

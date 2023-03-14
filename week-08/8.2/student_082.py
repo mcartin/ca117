@@ -1,4 +1,4 @@
-class Student:
+class Student(object):
 
     def __init__(self, sid, name, modlist=None):
         self.sid = sid

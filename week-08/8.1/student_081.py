@@ -1,4 +1,4 @@
-class Student():
+class Student(object):
 
     def set_attributes(self, sid, name, modlist):
         self.sid = sid

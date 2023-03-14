@@ -1,4 +1,4 @@
-class Point():
+class Point(object):
 
     def set_attributes(self, x, y):
         self.x = x
