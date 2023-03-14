@@ -1,4 +1,4 @@
-class Point:
+class Point(object):
 
     def __init__(self, x=0, y=0):
         self.x = x
@@ -13,7 +13,7 @@ class Point:
         return f"({self.x:.1f}, {self.y:.1f})"
     
 
-class Circle:
+class Circle(object):
 
     def __init__(self, centre=None, radius=1):
         self.centre = Point(0,0) if centre is None else centre
