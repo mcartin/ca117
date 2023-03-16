@@ -12,14 +12,13 @@ class Contactlist(object):
 
     def __init__(self, d=None):
         self.d = {} if d is None else d
+
     def add(self, c):
         self.d[c.name] = c
         
-
     def remove(self, name):
         if name in self.d:
             del self.d[name]
-
 
     def get(self, name):
         if name in self.d:
