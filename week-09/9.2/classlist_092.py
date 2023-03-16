@@ -7,13 +7,6 @@ class Student(object):
             modlist = []
         self.modlist = modlist
 
-    def add_module(self, module):
-        if module not in self.modlist:
-            self.modlist.append(module)
-
-    def del_module(self, module):
-        if module in self.modlist:
-            self.modlist.remove(module)
 
     def average_mark(self):
         return round(sum([int(n[1]) for n in self.modlist]) / len(self.modlist))
