@@ -47,7 +47,6 @@ class Classlist(object):
 
     def __str__(self):
         output = []
-        for k, v in sorted(self.d.items(), reverse=True):
+        for v in sorted(self.d.values(), reverse=True):
             output.append(f'{v}')
         return "\n".join(output)
-    
