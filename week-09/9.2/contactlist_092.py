@@ -10,8 +10,8 @@ class Contact(object):
     
 class Contactlist(object):
 
-    def __init__(self, d=None):
-        self.d = {} if d is None else d
+    def __init__(self):
+        self.d = {}
 
     def add(self, c):
         self.d[c.name] = c

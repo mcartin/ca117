@@ -13,8 +13,8 @@ class Meeting(object):
 
 class Schedule(object):
 
-    def __init__(self, meetings=None):
-        self.meetings = {} if meetings is None else meetings
+    def __init__(self):
+        self.meetings = {}
 
     def add(self, m):
         self.meetings[m.hour] = m

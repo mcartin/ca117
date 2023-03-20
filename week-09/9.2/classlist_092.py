@@ -3,9 +3,7 @@ class Student(object):
     def __init__(self, name, sid, modlist=None):
         self.name = name
         self.sid = sid
-        if modlist is None:
-            modlist = []
-        self.modlist = modlist
+        self.modlist = [] if modlist is None else modlist
 
 
     def average_mark(self):
@@ -31,8 +29,8 @@ class Student(object):
 
 class Classlist(object):
 
-    def __init__(self, d=None):
-        self.d = {} if d is None else d
+    def __init__(self):
+        self.d = {}
 
     def add(self, student):
         self.d[student.sid] = student
