@@ -21,18 +21,16 @@ class Stack(object):
         return len(self.l)
     
 
+binops = {'+': float.__add__,
+    '-': float.__sub__,
+    '*': float.__mul__,
+    '/': float.__truediv__}
+
+uniops = {'n': float.__neg__,
+        'r': sqrt}
     
 
 def calculator(line):
-
-    binops = {'+': float.__add__,
-            '-': float.__sub__,
-            '*': float.__mul__,
-            '/': float.__truediv__}
-    
-    uniops = {'n': float.__neg__,
-          'r': sqrt}
-    
     s = Stack()
 
 
