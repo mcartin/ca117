@@ -26,7 +26,6 @@ class Student(object):
         output.append(f'Average mark: {self.average_mark()}')
         return "\n".join(output)
     
-
 class Classlist(object):
 
     def __init__(self):
