@@ -1,8 +1,8 @@
-def maximum(list):
-    if len(list) == 1:
-        return list[0]
+def maximum(l):
+    if len(l) == 1:
+        return l[0]
     else:
-        if list[0] > maximum(list[1:]):
-            return list[0]
+        if l[0] > maximum(l[1:]):
+            return l[0]
         else:
-            return maximum(list[1:])
+            return maximum(l[1:])
